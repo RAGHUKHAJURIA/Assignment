@@ -1,0 +1,30 @@
+{
+  "name": "clarity-rca",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server/index.js",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.js --production",
+    "test": "node --experimental-test-isolation=none --test tests/*.test.js",
+    "check": "tsc --noEmit",
+    "test:browser": "node scripts/browser-check.mjs"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "lucide-react": "0.544.0",
+    "multer": "2.1.1",
+    "pdf-parse": "1.1.4",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3",
+    "vite": "7.3.3",
+    "playwright": "1.62.0"
+  }
+}

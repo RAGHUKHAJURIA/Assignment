@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+data/
+.npm-cache/
+test-results/
+playwright-report/
+*.log
+.browser-profile/
+.browser-test*/
+
+.python-packages/
+__pycache__/
+
+.venv/
